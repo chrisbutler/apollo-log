@@ -6,6 +6,7 @@ declare module "apollo-log" {
     mutate?: (level: LogLevel, data: Record<string, string> | string) => object | null;
     prefix?: string;
     timestamp?: boolean;
+    logger?: object;
   }
 
   export class ApolloLogExtension {
