@@ -3,7 +3,7 @@ declare module "apollo-log" {
 
   export interface LoggerOptions {
     level?: LogLevel;
-    mutate?: (level: LogLevel, data: Record<string, string> | string) => object;
+    mutate?: (level: LogLevel, data: Record<string, string> | string) => object | null;
     prefix?: string;
     timestamp?: boolean;
   }
